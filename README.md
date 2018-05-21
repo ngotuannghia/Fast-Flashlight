@@ -1,5 +1,10 @@
-# Fast-Flashlight
+# LED Flashlight Fast Torch App
+  
+[<img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png">](https://play.google.com/store/apps/details?id=com.smobileteam.flashlight)
 
+
+Overview
+---
 Searching for an elegant, beautiful, yet so undeniably effective LED flashlight app? Try our LED Flashlight App. We truly think we have the brightest flashlight with the fastest startup in one torch app. It will provide you with the light in a vital moment when speed is really important. Most notably, it is important to emphasize that this tiny flashlight, is not only the best flashlight on Android, but also that it is a free flashlight app.
 
 EASY TO USE AND WITH BLAZING SPEED
@@ -17,7 +22,25 @@ LED Flashlight Fast Torch App features:
 • Automatic Timer Exits Application after 2 minutes , 5 minutes, 10 minutes.
 • Compass feature
 • Special Feature: Flash light + Video Zoom View (Magnifier)
-………………………………………………………………………………………………………
+
+Warning
+---
+
 We dare you to find a better free flashlight than our tiny flashlight led app.
 Bright phone flashlight that can be extremely helpful in many specific occasions.
-Download flashlight app for free now!
+
+
+Support
+---
+ - Website: https://vntalking.com
+ - Join [G+ community](https://plus.google.com/u/0/108422452411886458934) for discussions
+ - Join [Facebook page](https://www.facebook.com/vntalking/)
+
+
+Authors
+---
+- Dương Anh Sơn
+
+### License: 
+
+    Apache 2.0
