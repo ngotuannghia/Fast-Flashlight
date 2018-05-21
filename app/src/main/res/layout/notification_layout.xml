@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tran"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/notification_ll_flashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/notification_flashlight"
+            android:layout_width="@dimen/notification_icon_width_height"
+            android:layout_height="@dimen/notification_icon_width_height"
+            android:layout_margin="8dp"
+            android:padding="15dp"
+            android:background="@drawable/button_notification_seletor"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_light_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification_ll_screenlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/notification_screenlight"
+            android:layout_width="@dimen/notification_icon_width_height"
+            android:layout_height="@dimen/notification_icon_width_height"
+            android:layout_margin="8dp"
+            android:background="@drawable/button_notification_seletor"
+            android:contentDescription="@string/app_name"
+            android:padding="15dp"
+            android:src="@drawable/ic_screenlight_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification_ll_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/notification_glass"
+            android:layout_width="@dimen/notification_icon_width_height"
+            android:layout_height="@dimen/notification_icon_width_height"
+            android:layout_margin="8dp"
+            android:padding="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_glass_dark"
+            android:background="@drawable/button_notification_seletor"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_down">
+
+    <SurfaceView
+        android:id="@+id/PREVIEW"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/flashlight_rl_strobe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/flashlight_activity_strobe_height"
+        android:background="@drawable/backgroundcover_up">
+
+        <com.smobileteam.flashlight.view.StrobeView
+            android:id="@+id/flashlight_strobeview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:lwvHighlightColor="@color/mark_sos"
+            app:lwvIntervalFactor="3.5" />
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/compass_background"
+            android:gravity="center">
+
+            <TextSwitcher
+                android:id="@+id/flashlight_txt_numberstrobe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/flashlight_activity_strobe_number_textsize" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/flashlight_rl_strobe"
+        android:background="@drawable/backgroundcover_down">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/flashlight_btn_indicator"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/button_indicator" />
+
+        <include
+            android:id="@+id/battery_infor_layout"
+            layout="@layout/battery_information_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/flashlight_btn_indicator"
+            android:layout_centerHorizontal="true" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/flashlight_btn_power"
+            android:layout_width="@dimen/flashlight_activity_power_button"
+            android:layout_height="@dimen/flashlight_activity_power_button"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/button_power_selector" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="55dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/flashlight_btn_screenlight"
+                android:layout_width="@dimen/flashlight_activity_btn_width_height"
+                android:layout_height="@dimen/flashlight_activity_btn_width_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/button_screenlight" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/flashlight_btn_glass"
+                android:layout_width="@dimen/flashlight_activity_btn_width_height"
+                android:layout_height="@dimen/flashlight_activity_btn_width_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/button_glass" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/flashlight_btn_setting"
+                android:layout_width="@dimen/flashlight_activity_btn_width_height"
+                android:layout_height="@dimen/flashlight_activity_btn_width_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/button_setting" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/flashlight_btn_quick_controller"
+        android:layout_width="@dimen/flashlight_button_lock_width"
+        android:layout_height="@dimen/flashlight_button_lock_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/flashlight_rl_strobe"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/introdution_quick_controller"
+        app:srcCompat="@drawable/button_quick_controller" />
+
+    <FrameLayout
+        android:id="@+id/flashlight_fl_disableclick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_transparent"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/flashlight_btn_lock"
+        android:layout_width="@dimen/flashlight_button_lock_width"
+        android:layout_height="@dimen/flashlight_button_lock_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/flashlight_rl_strobe"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/introduction_lock_button"
+        app:srcCompat="@drawable/button_lock" />
+
+
+</RelativeLayout>

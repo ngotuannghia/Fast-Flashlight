@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_btn_bg_pressed_color">
+
+    <LinearLayout
+        android:id="@+id/lnContainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_controller_bar"
+        android:baselineAligned="false"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/flashlight_activity_btn_width_height"
+                android:layout_height="@dimen/flashlight_activity_btn_width_height"
+                app:srcCompat="@drawable/button_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/btnFlash"
+                android:layout_width="@dimen/flashlight_activity_btn_width_height"
+                android:layout_height="@dimen/flashlight_activity_btn_width_height"
+                app:srcCompat="@drawable/button_flash" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/btnCaptureImage"
+                android:layout_width="@dimen/flashlight_activity_btn_width_height"
+                android:layout_height="@dimen/flashlight_activity_btn_width_height"
+                app:srcCompat="@drawable/button_capture_image" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/flPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnContainMenu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:clickable="true"
+        android:paddingTop="5dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/btn_compass"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            app:srcCompat="@drawable/button_compass_glass" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/btn_rotate_camera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            app:srcCompat="@drawable/button_rotate_camera"/>
+
+        <com.smobileteam.flashlight.view.RoundedImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            app:siBorderWidth="3dp"
+            app:siRadius="3dp"
+            app:siBorderColor="@color/white"
+            app:siSquare="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/no_thumbnail"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_zoomcamera_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnContainMenu"
+        android:layout_marginBottom="20dp">
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/sbZoomCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_zoom_in"
+            android:layout_toLeftOf="@+id/txt_zoom_out"
+            android:layout_toRightOf="@+id/txt_zoom_in"
+            android:layout_toStartOf="@+id/txt_zoom_out"
+            android:max="60"
+            android:progress="0"
+            android:secondaryProgress="0"
+            android:thumb="@drawable/seekbar_thum" />
+
+        <TextView
+            android:id="@+id/txt_zoom_in"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_zoom_out"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/glass_activity_txt_true_north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageViewCompass"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/true_north_textsize"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewCompass"
+        android:layout_width="@dimen/compass_width"
+        android:layout_height="@dimen/compass_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_compass" />
+
+    <RelativeLayout
+        android:id="@+id/af_casing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clipChildren="false">
+
+        <com.smobileteam.flashlight.view.AutofocusCrosshair
+            android:id="@+id/af_crosshair"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clipChildren="false" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

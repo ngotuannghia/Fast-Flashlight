@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Flashlight</string>
+    <string name="string_ok">OK</string>
+    <string name="string_cancel">Cancel</string>
+    <string name="msg_warning_device_not_support_flashlight">Your device hardware does not support flash.
+         \nWe will use the screen light to alternative.</string>
+    <string name="warning_title">Oops…</string>
+    <string name="msg_error">Error</string>
+    <string name="msg_warning">Warning</string>
+    <string name="msg_loading">Loading…</string>
+    <string name="folder">FLASHLIGHT</string>
+    <string name="string_exit">Exit</string>
+
+
+    <string name="st_title">Settings</string>
+    <string name="st_category_light_setting">Light settings</string>
+    <string name="st_enable_touch_sound">Enable touch sounds</string>
+    <string name="st_automatic_turn_on_led">Turn on LED when start app</string>
+    <string name="st_automatic_turn_on_led_des">Automatic turn on LED when start app</string>
+    <string name="st_timer_turn_off_led">Timer to turn off light</string>
+    <string name="st_category_about_name">Information</string>
+    <string name="st_category_performance">Performance</string>
+    <string name="st_about_app_version_title">App version</string>
+    <string name="st_about_app_rate_app_title">Say Thanks</string>
+    <string name="st_about_app_rate_app_description">If you are enjoying Flashlight app, please leave a comment on play store.</string>
+    <string name="st_about_app_feedback_title">Feedback &amp; Error reporting</string>
+    <string name="st_about_app_license_title">Licenses</string>
+    <string name="st_about_app_license_description">License details for open source software</string>
+    <string name="st_about_app_power_saving_mode_title">Ultra power saving mode</string>
+    <string name="st_about_app_power_saving_mode_description">Automatic enable Save power mode with a simple skin and limited features when Battery less %1$d%% </string>
+    <string name="st_battery_level_title">Battery level for active Power save mode</string>
+    <string name="st_about_app_smobile_on_googleplus_title">SMobile team on Google Plus</string>
+    <string name="st_vabration_title">Vibration</string>
+    <string name="st_vabration_sumary">Vibration when press Power button</string>
+    <string name="st_ask_on_quit_title">Ask on quit</string>
+    <string name="st_keep_screen_on_title">Keep screen on</string>
+    <string name="st_keep_screen_on_sumary">Keep your screen on when your device is running your Flashlight application</string>
+    <string name="feedback">Feedback</string>
+    <string name="about_app_feedback_title">Feedback &amp; Error reporting</string>
+    <string name="about_app_smobile_on_googleplus_title">SMobile team on Google Plus</string>
+    <string name="app_feedback_exception_no_app_handle">No email app on your phone</string>
+
+    <string name="text_screenlight">Please select mode and then press power button</string>
+    <string name="tips_how_to_exit">Double tap on screen to exit</string>
+    <string name="title_open_image">View image</string>
+
+    <string name="msg_explain_permission_camera">Without CAMERA permission,
+        the app cann\'t turn on flashlight and the app will use screen light instead of flash.
+        \n\nAre you sure you want to deny this permission?</string>
+    <string name="msg_explain_permission_storage">Without STORAGE permission,
+        the app cannot capture image and save on local storage.\n
+        \n\nAre you sure you want to deny this permission?</string>
+
+    <string name="msg_explain_permission_camera_for_glass">Without CAMERA permission,
+        The app cannot use camera hardware to show or zoom anything.\n
+        \n\nAre you sure you want to deny this permission?</string>
+
+    <string name="button_retry">Re-try</string>
+    <string name="error_flashlight_busy">LED flash are using by other app, the app will use screen light instead.</string>
+    <!-- Rate dialog -->
+    <string name="rate_dialog_txt_title">Rate it 5-Stars</string>
+    <string name="rate_dialog_txt_inform">If you enjoy using LED Flashlight app. Would you mind taking a moment to rate it?
+    It won\'t take more than a minute. Thanks for your support</string>
+    <string name="rate_dialog_btn_rate_now">5-Stars</string>
+    <string name="rate_dialog_btn_rate_remind_late">Dislike it</string>
+    <string name="rate_dialog_btn_no_thank">No</string>
+    <string name="checkbox_dont_show_again">Don\'t show again</string>
+
+    <string name="rating_dialog_experience">We\'re so happy to hear that you love Flashlight!
+        It\'d be really helpful if you rated us in the Google Play Store.
+        Thanks so much for spending some time with us. </string>
+    <string name="rating_dialog_maybe_later">Maybe later</string>
+    <string name="rating_dialog_never">Never</string>
+    <string name="rating_dialog_feedback_title">Feedback</string>
+    <string name="rating_dialog_submit">Submit</string>
+    <string name="rating_dialog_cancel">Cancel</string>
+    <string name="rating_dialog_suggestions">Suggest us what went wrong and we\'ll work on it!</string>
+
+    <string name="introduction_lock_button">When you lock the app,
+        you cannot use other buttons to controller such as: turn on/turn off flashlight, setting app…</string>
+    <string name="introdution_quick_controller">the way to faster turn on flashlight</string>
+    <string name="quit">Confirm Exit</string>
+    <string name="quit_confirm_message">Are you sure you want to exit?</string>
+    <!-- Dialog -->
+    <string name="dont_show_again">Don\'t show again</string>
+    <string name="ex_msg_dialog_view_not_set">You must call method setView before calling configureView.</string>
+    <string name="msg_enable_quick_controller">You enabled the Quick Control Panel(The bar below status bar)</string>
+    <string name="msg_disable_quick_controller">You disabled the Quick Control Panel</string>
+
+    <string name="upsm_toolbar_title">Ultra power saving mode</string>
+    <string name="upsm_flashlight_title">Save power mode with a simple skin and access to limited feature of app</string>
+    <string name="upsm_battery">Battery percentage</string>
+    <string name="upsm_usage_time_left">Estimated usage time remaining</string>
+    <string name="upsm_turn_off_ultra_power_saving_mode">Disable ultra power saving mode</string>
+    <string name="upsm_action_option_menu">Option menu</string>
+    <string name="upsm_msg_enable_mode">Because the battey level less %1$d%% so Ultra Power saving model is enabled.</string>
+    <string name="upsm_msg_feature_disabled_warning">Because Ultra Power Saving mode was enable so you cannot use this feature.</string>
+</resources>

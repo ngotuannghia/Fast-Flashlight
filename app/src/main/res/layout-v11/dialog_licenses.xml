@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/view_color_area" />
+
+    <TextView
+        android:id="@id/ld_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="@dimen/ld_side_margin"
+        android:layout_marginRight="@dimen/ld_side_margin"
+        android:textColor="?android:textColorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/wv_license_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_above="@+id/ld_btn_confirm"/>
+
+    <Button
+        android:id="@+id/ld_btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        style="?android:borderlessButtonStyle"
+        android:textColor="@color/darkBlueGrey"
+        android:text="@android:string/ok" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.smobileteam.flashlight.view.ColorPicker
+        android:id="@+id/color_picker"
+        android:layout_width="@dimen/color_picker_view_width_height"
+        android:layout_height="@dimen/color_picker_view_width_height"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

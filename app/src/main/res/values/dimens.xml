@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="flashlight_activity_power_button">200dp</dimen>
+    <dimen name="upsm_flashlight_activity_power_button">170dp</dimen>
+    <dimen name="flashlight_activity_strobe_height">100dp</dimen>
+    <dimen name="flashlight_activity_strobe_number_textsize">20dp</dimen>
+    <dimen name="flashlight_activity_btn_width_height">45dp</dimen>
+    <dimen name="flashlight_button_lock_width">60dp</dimen>
+    <dimen name="flashlight_button_lock_height">60dp</dimen>
+    <dimen name="alert_width">300dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="color_picker_view_width_height">200dp</dimen>
+
+    <dimen name="frame_autofocus_width">150dp</dimen>
+    <dimen name="frame_autofocus_height">150dp</dimen>
+    <dimen name="compass_width">250dp</dimen>
+    <dimen name="compass_height">250dp</dimen>
+    <dimen name="true_north_textsize">30sp</dimen>
+    <dimen name="notification_icon_width_height">50dp</dimen>
+    <!-- Dialog -->
+    <dimen name="ld_side_margin">22dp</dimen>
+    <dimen name="ld_side_cb_margin">16dp</dimen>
+
+    <!-- tooltip-->
+    <dimen name="ttlm_default_padding">20dip</dimen>
+    <dimen name="ttlm_default_corner_radius">4dip</dimen>
+    <dimen name="ttlm_default_stroke_weight">0dip</dimen>
+    <dimen name="ttlm_default_elevation">2dp</dimen>
+
+</resources>

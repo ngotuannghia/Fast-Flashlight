@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/option_menu"
+        android:icon="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha"
+        android:orderInCategory="1"
+        android:title="@string/upsm_action_option_menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/disable_mode_menu"
+                android:orderInCategory="2"
+                android:title="@string/upsm_turn_off_ultra_power_saving_mode"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>

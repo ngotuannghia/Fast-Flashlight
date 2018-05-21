@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="140dp"
+    android:background="@drawable/bg_widget"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/widget_bar"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/widget_ll_power"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/widget_btn_power"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/button_power_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/widget_ll_wifi_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/widget_btn_wifi_setting"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/wd_wifi_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bar_widget"
+        android:gravity="center_vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/widget_ll_screenlight"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/widget_btn_screenlight"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/button_screenlight_widget" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/widget_ll_glass"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/widget_btn_glass"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/button_glass_widget" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/widget_ll_setting"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/widget_btn_setting"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/button_settings_widget" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screenlight"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/screenlight_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/text_screenlight"/>
+
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/screenlight_sb_brightestlevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/screenlight_guide"
+        android:max="100"
+        android:thumbOffset="8dp"
+        android:thumb="@drawable/seekbar_thumb"/>
+
+    <Button
+        android:id="@+id/screenlight_btn_sos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/screenlight_img_power"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/screenlight_button_selector"
+        android:text="SOS" />
+
+
+    <ImageView
+        android:id="@+id/screenlight_img_power"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/screenlight_power_selector" />
+
+    <Button
+        android:id="@+id/screenlight_btn_color"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/screenlight_img_power"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/screenlight_button_selector"
+        android:text="Color" />
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_controller_bar"
+        android:gravity="center">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/screenlight_img_back"
+            android:layout_width="@dimen/flashlight_activity_btn_width_height"
+            android:layout_height="@dimen/flashlight_activity_btn_width_height"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/button_back" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/screenlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"/>
+</RelativeLayout>
