@@ -16,12 +16,12 @@ Most flashlight apps are not only slow and clunky, but are also clunky. We were 
 MAGNIFY IN IMPORTANT MOMENTS
 Besides providing a powerful light, our brightest LED Flashlight provides you an extremely useful magnifying glass (Magnifier)! Get the best magnifying glass in the market today in combination with a great LED flash light app.
 
-LED Flashlight Fast Torch App features:
-• Camera Flash LED
-• Screen flashlight : Use screen as a light source automatically when fail to open camera LED or camera LED is not present
-• Automatic Timer Exits Application after 2 minutes , 5 minutes, 10 minutes.
-• Compass feature
-• Special Feature: Flash light + Video Zoom View (Magnifier)
+LED Flashlight Fast Torch App features:<br>
+• Camera Flash LED<br>
+• Screen flashlight : Use screen as a light source automatically when fail to open camera LED or camera LED is not present<br>
+• Automatic Timer Exits Application after 2 minutes , 5 minutes, 10 minutes.<br>
+• Compass feature<br>
+• Special Feature: Flash light + Video Zoom View (Magnifier)<br>
 
 Warning
 ---
